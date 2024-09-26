@@ -1,0 +1,63 @@
+body {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Color del texto blanco */
+    cursor: pointer; /* Cambia el cursor a pointer */
+}
+
+.dark button {
+    --a: 0%;
+    --hue: 300deg; /* Color neón */
+    --x: 50;
+    --y: 50;
+    --button: hsl(var(--hue), 100%, 50%);
+    --edge: 20px;
+    --size: 2em;
+    
+    background: transparent; /* Fondo transparente */
+    color: hsla(var(--hue), 100%, 70%, 0.9);
+    font-size: 1.8em;
+    position: relative;
+    padding: calc(var(--size)) calc(var(--size) * 1.5);
+    animation: color 20s linear infinite both;
+    transition: 
+        --a .5s ease-in-out, 
+        scale var(--spring-duration) var(--spring-easing);
+    scale: 0.92;
+    isolation: isolate;
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el contorno al enfocar */
+}
+
+.dark button:hover {
+    --a: 100%;
+    transition-duration: .5s, 1s;
+    box-shadow: none;
+    opacity: 1;
+    scale: 1;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    inset: 0em;
+    filter: blur(12px) url(#goo) drop-shadow(0 .25em .5em hsla(0deg, 0%, 0%, 0.8)); 
+    background-image:
+        linear-gradient(0deg,var(--button),var(--button)),
+        radial-gradient(
+            40% 70% at calc(var(--x) * 1%) calc(var(--y) * 1%),
+            hsla(var(--hue), 100%, 90%, var(--a)) 0%,
+            transparent 90%
+        );
+    background-clip: content-box, border-box;
+    padding: 24px;
+    z-index: -1;
+    animation: color 20s linear infinite both;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    color: var(--light);
+    text-align: center;
+}
+

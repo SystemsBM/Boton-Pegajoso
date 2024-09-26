@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boton Pegajoso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+    <main id="app">   
+        <div>
+            <button type="button">Tócame &#x1F60F </button>
+        </div>      
+     </main>
+
+    <svg width="0" height="0" style="position: absolute;">
+        <filter id="goo" x="-50%" y="-50%" width="200%" height="200%">
+            <feComponentTransfer>
+                <feFuncA type="discrete" tableValues="0 1"></feFuncA>
+            </feComponentTransfer>
+            <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+            <feComponentTransfer>
+                <feFuncA type="table" tableValues="-5 11"></feFuncA>
+            </feComponentTransfer>
+        </filter>
+    </svg>
+  <script src="script.js"></script>
+</body>
+</html>
