@@ -2,6 +2,8 @@
 
 Este proyecto presenta un **botón pegajoso** que permanece visible mientras desplazas la página, utilizando HTML, CSS y JavaScript. Ideal para mejorar la interacción con los usuarios.
 
+https://github.com/user-attachments/assets/4a4d7b52-d0b1-4207-906c-14b5fe61c2cb
+
 ## Tecnologías Utilizadas
 
 - **HTML**: Estructura del botón.
