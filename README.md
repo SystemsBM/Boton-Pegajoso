@@ -18,11 +18,10 @@ Puedes ver el botón en acción en https://systemsbm.github.io/Boton-Pegajoso/.
 Si deseas contribuir a este proyecto, siéntete libre de enviar un pull request o abrir un issue.
 
 ## Redes Sociales
-📧 Correo: technoystems32@gmail.com
-🌐 Blog: infosystembm.blogspot.com
-👤 Perfil: Facebook
-🐦 Twitter: @systemsbm
-📚 Instagram: la_academia_informatica
+- 📧 **Correo**: technoystems32@gmail.com.
+- 🌐 **Blog**: infosystembm.blogspot.com.
+- 👤 **Perfil**: https://www.facebook.com/profile.php?id=100082948671979.
+- 📽️ **Youtube**: @systemsbm.
 
 ## Licencia
 Este proyecto está bajo la Licencia MIT.
